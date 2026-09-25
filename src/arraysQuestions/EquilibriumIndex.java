@@ -8,8 +8,8 @@ public class EquilibriumIndex {
 
     /**
      * Find the index of the array from which sum of all elements to the left is equal to the sum of all elements to the right.
-     * @param arr
-     * @return
+     * @param arr of integers
+     * @return index value.
      */
     public static int getEquilibriumIndex(int[] arr){
         int size = arr.length;
