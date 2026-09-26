@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class NextPermutation {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 5, 4, 2};
+        int[] arr = {1,2,3};
         System.out.println(Arrays.toString(getNextPermutation(arr)));
     }
 
