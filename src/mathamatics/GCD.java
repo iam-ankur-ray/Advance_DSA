@@ -2,8 +2,9 @@ package mathamatics;
 
 public class GCD {
     public static void main(String[] args) {
-        System.out.println(getGCD(5,0));
-        System.out.println(getGCD(8,16));
+        System.out.println(getGCD(6816621,8157697));
+        System.out.println(8157697-6816621);
+        //System.out.println(getGCD(8,16));
         int[] arr = {5,5,25,63,14,85,97};
 
         int ans = arr[0];
@@ -12,7 +13,7 @@ public class GCD {
             ans = getGCD(ans,arr[i]);
         }
 
-        System.out.println(ans);
+      //  System.out.println(ans);
 
     }
 
