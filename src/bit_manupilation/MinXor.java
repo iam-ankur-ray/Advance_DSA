@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MinXor {
     public static void main(String[] args) {
-        int[] arr = {0, 2, 5, 7};
+        int[] arr = {0, 9, 5, 7};
         System.out.println(getMinXor(arr));
     }
 
