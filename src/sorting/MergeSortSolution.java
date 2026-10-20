@@ -27,21 +27,21 @@ public class MergeSortSolution {
 
     }
 
-    public static int[] merge(int[] A, int s, int m, int r){
-        int M = m - s + 1;
+    public static int[] merge(int[] A, int l, int m, int r){
+        int M = m - l + 1;
         int N = r - m;
         int[] B = new int[M];
         int[] C = new int[N];
 
-        for(int i = s; i <= m;i++){
-            B[i-s] = A[i];
+        for(int i = l; i <= m; i++){
+            B[i- l] = A[i];
         }
 
         for(int i = m+1; i <= r; i++){
             C[i-m-1] = A[i];
         }
 
-        int i = 0, j = 0, k = s;
+        int i = 0, j = 0, k = l;
         while(i < M && j < N){
             if(B[i] <= C[j]){
                 A[k] = B[i];
