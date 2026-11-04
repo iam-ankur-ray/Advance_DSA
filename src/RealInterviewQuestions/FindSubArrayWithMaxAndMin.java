@@ -2,7 +2,7 @@ package RealInterviewQuestions;
 
 public class FindSubArrayWithMaxAndMin {
     public static void main(String[] args) {
-        int[] A = {9, 1, 1,9, 6, 9, 2, 4, 9};
+        int[] A = {9, 2, 3,9, 6, 1, 2, 4, 9};
         int ans = getMaxMinSubArray(A);
         System.out.println(ans);
     }
