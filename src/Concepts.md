@@ -1,6 +1,6 @@
 # Brackets
-- [] brackets will include both numbers in range i.e., [1,5] will have 5 values. Formula b - a + 1;
-- () brackets will exclude both numbers in range i.e., [1,5] will have 3 values. Formula b - a - 1;
+- [] brackets will include both DSA1.numbers in range i.e., [1,5] will have 5 values. Formula b - a + 1;
+- () brackets will exclude both DSA1.numbers in range i.e., [1,5] will have 3 values. Formula b - a - 1;
 - To find out the factorial in sqrt of n iterations check if i is divisible by N and count answer +2 and if i == N/i count +1;
 
 
