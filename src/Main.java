@@ -4,25 +4,63 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println(getSize(new int[]{4,1,0,1,1,1,0},4));
-    }
-
-    public static int getSize(int[] a, int k){
-        int l = 0, size = a.length, L = 0;
-        int sum = 0;
-        for(int i = 0; i < size; i++){
-            sum += a[i];
-            l++;
-
-            L = Math.max(L,l);
-
-            if(sum >= k){
-                l = 0;
-                sum = 0;
-            }
-        }
-        return L;
+        Student Ankur = new Student("Ankur Ray", 06, 98, "12th");
+        Student Priye = new Student("Priya Yadav", 29, 100, "11th");
+        System.out.println(Ankur.name);
+        Ankur.setName("Ankur Kumar Ray");
+        System.out.println(Ankur.name);
+        System.out.println("Ankur's class is : " + Ankur.getClassNumber() + " and he scored : " + Ankur.getScore());
+        System.out.println(Priye.getName());
+        System.out.println(Priye.getScore());
     }
 
 
+
+}
+
+class Student {
+
+    String name;
+    int rollNumber;
+    int score;
+    String classNumber;
+
+    public Student(String name, int rollNumber, int score, String classNumber) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.score = score;
+        this.classNumber = classNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRollNumber() {
+        return rollNumber;
+    }
+
+    public void setRollNumber(int rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public String getClassNumber() {
+        return classNumber;
+    }
+
+    public void setClassNumber(String classNumber) {
+        this.classNumber = classNumber;
+    }
 }
